@@ -1,0 +1,77 @@
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# ------------------------------
+# Virtual Environment
+# ------------------------------
+venv/
+env/
+ENV/
+.env/  # jika kamu pakai folder env
+*.venv
+
+# ------------------------------
+# Environment / Secrets
+# ------------------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+*.secret
+
+# ------------------------------
+# Database
+# ------------------------------
+*.sqlite3
+*.db
+*.db-journal
+*.sql
+
+# ------------------------------
+# Alembic
+# ------------------------------
+# versi migration tetap dikontrol git
+# versi cache / pycache alembic bisa ignore
+alembic/__pycache__/
+alembic/versions/__pycache__/
+
+# ------------------------------
+# IDE / Editor
+# ------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.DS_Store
+*.iml
+
+# ------------------------------
+# Python packaging
+# ------------------------------
+*.egg-info/
+*.egg
+*.dist-info/
+build/
+dist/
+pip-wheel-metadata/
+
+# ------------------------------
+# Misc
+# ------------------------------
+*.log
+*.bak
+*.tmp
