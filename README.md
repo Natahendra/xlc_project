@@ -338,3 +338,20 @@ alembic upgrade head
 ## License
 
 MIT License (atau sesuai kebutuhan project)
+
+----------------
+Cara Menjalankan (Installation & Running)
+
+Cara Menjalankan (Installation & Running)Ikuti langkah-langkah di bawah ini secara berurutan:1. Persiapkan Virtual Environment (Opsional tapi Disarankan)Bashpython -m venv venv
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+2. Install DependenciesBashpip install fastapi uvicorn sqlalchemy pandas
+3. Inisialisasi Database (Setup Awal)Langkah ini akan menghapus database lama dan membuat yang baru dengan kolom yang lengkap.Bash# Import data XLC dari CSV
+python isi_xlc.py
+
+# Daftarkan User/PIC (I GEDE ARI HENDRA NATA)
+python isi_data.py
+4. Jalankan Server BackendBash python -m uvicorn main:app --reload
+Server akan berjalan di: http://127.0.0.1:8000📡 API EndpointsMethodEndpointDeskripsiPOST/api/loginLogin menggunakan ID Operator (Contoh: iwx711559)GET/api/xlc?q=NAMA_XLCMencari detail teknis berdasarkan nama XLC📝 Catatan PentingJika kamu mengubah isi Book1.csv, kamu wajib menjalankan kembali python isi_xlc.py agar data di dashboard terupdate.Pastikan file xlc_rewrite.db tidak sedang dibuka oleh aplikasi lain saat proses import data.
